@@ -1,0 +1,23 @@
+{
+  "name": "electron-video-converter",
+  "version": "1.0.0",
+  "description": "hackathon2",
+  "main": "index.js",
+  "homepage": "./",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"electron .\" \"cd react-front && npm start\"",
+    "build": "cd react-front && npm run build && cd .. && electron-packager . electron-video-converter --all --asar",
+    "package": "electron-packager . desktop-app --all --asar"
+  },
+  "author": "boopalan",
+  "license": "ISC",
+  "dependencies": {  
+    "concurrently": "^6.2.1",
+    "electron-is-dev": "^2.0.0"   
+  },
+  "devDependencies": {
+    "electron": "^14.0.0",
+    "electron-packager": "^15.4.0"
+  }
+}

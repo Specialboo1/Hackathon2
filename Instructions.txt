@@ -1,0 +1,5 @@
+1. Start the server from node folder by npm run dev
+
+2. Start the react fron react-front folder by npm sun start
+
+3. Start the electron for desktop app from the current folder by npm run dev 
